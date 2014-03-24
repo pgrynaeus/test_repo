@@ -119,3 +119,107 @@ body {
       .menus h3.contact:before {
         width: 18px;
         background-position: -32px 0px; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+  margin: 0 135px 10px;
+  text-align: left; }
+  @media screen and (min-width: 760px) {
+    ul {
+      margin: 0 0 0 25px;
+      display: block;
+      width: auto; } }
+  ul.open {
+    display: inline-block;
+    margin: 0 auto 10px 60px; }
+    @media screen and (min-width: 760px) {
+      ul.open {
+        margin: 0 0 0 25px;
+        display: block;
+        width: auto; } }
+  ul li a {
+    color: #5e5e5e;
+    text-decoration: none;
+    -webkit-transition: color 0.4s ease;
+    -moz-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+    -ms-transition: color 0.4s ease;
+    transition: color 0.4s ease; }
+    ul li a:hover, ul li a.current-menu-item {
+      color: white;
+      -webkit-transition: color 0.4s ease;
+      -moz-transition: color 0.4s ease;
+      -o-transition: color 0.4s ease;
+      -ms-transition: color 0.4s ease;
+      transition: color 0.4s ease; }
+
+.content {
+  width: 100%;
+  min-height: 100%;
+  background: white; }
+  @media screen and (min-width: 760px) {
+    .content {
+      float: left;
+      width: 80%; } }
+  .content .portfolio-item {
+    background: #f7f7f7; }
+    .content .portfolio-item:before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      background: #eaeaea;
+      top: 0px;
+      left: 17px;
+      bottom: 0px; }
+    .content .portfolio-item.first:before {
+      top: 30px; }
+    .content .portfolio-item .portfolio-info {
+      min-height: 100%;
+      color: #5e5e5e;
+      padding: 20px 20px 20px 40px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box; }
+      @media screen and (min-width: 760px) {
+        .content .portfolio-item .portfolio-info {
+          float: left;
+          width: 30%; } }
+      .content .portfolio-item .portfolio-info .date {
+        font-size: 110%;
+        color: black;
+        margin-bottom: 10px; }
+        .content .portfolio-item .portfolio-info .date:before {
+          content: "";
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          border: 2px solid #f7f7f7;
+          background: #d35136;
+          left: -29px;
+          top: 3px; }
+      .content .portfolio-item .portfolio-info .meta {
+        color: black;
+        margin-top: 10px; }
+        .content .portfolio-item .portfolio-info .meta p {
+          margin: 0; }
+
+portfolio-image {
+  padding: 20px;
+  background: white;
+  border-left: 1px solid #dedede;
+  text-align: center; }
+  @media screen and (min-width: 760px) {
+    portfolio-image {
+      float: left;
+      width: 70%; } }
+  portfolio-image img {
+    width: 100%;
+    max-width: 610px;
+    height: auto; }
+  portfolio-image div.loading img {
+    width: auto;
+    height: auto; }

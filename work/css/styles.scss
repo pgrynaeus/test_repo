@@ -204,3 +204,150 @@ body {
         }
     }
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+    margin: 0 $margin*13.5 $margin;
+    text-align: left;
+     
+    @media screen and (min-width: $break-three) {
+        margin: 0 0 0 $margin*2.5;
+        display: block;
+        width: auto;
+    }
+ 
+    &.open {
+        display: inline-block;
+        margin: 0 auto $margin $margin*6;
+ 
+        @media screen and (min-width: $break-three) {
+            margin: 0 0 0 $margin*2.5;
+            display: block;
+            width: auto;
+        }
+    }
+ 
+    li {
+        a {
+            color: $darkgrey;
+            text-decoration: none;
+            -webkit-transition: color 0.4s ease;
+            -moz-transition: color 0.4s ease;
+            -o-transition: color 0.4s ease;
+            -ms-transition: color 0.4s ease;
+            transition: color 0.4s ease;
+ 
+            &:hover, &.current-menu-item {
+                color: $white;
+                -webkit-transition: color 0.4s ease;
+                -moz-transition: color 0.4s ease;
+                -o-transition: color 0.4s ease;
+                -ms-transition: color 0.4s ease;
+                transition: color 0.4s ease;
+            }
+        }
+    }
+}
+//Main Content
+.content {
+    width: 100%;
+    min-height: 100%;
+    background: $white;
+ 
+    @media screen and (min-width: $break-three) {
+        float: left;
+        width: 80%;
+    }
+ 
+    .portfolio-item {
+        background: $grey;
+ 
+        &:before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            background: darken($grey, 5%);
+            top: 0px;
+            left: 17px;
+            bottom: 0px;
+        }
+ 
+        &.first {
+            &:before {
+                top: 30px;
+            }
+        }
+ 
+        .portfolio-info {
+            min-height: 100%;
+            color: $darkgrey;
+            padding: $padding*2 $padding*2 $padding*2 $padding*4;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+ 
+            @media screen and (min-width: $break-three) {
+                float: left;
+                width: 30%;
+            }
+ 
+            .date {
+                font-size: 110%;
+                color: $black;
+                margin-bottom: $margin;
+ 
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 11px;
+                    height: 11px;
+                    border-radius: 50%;
+                    border: 2px solid $grey;
+                    background: $red;
+                    left: -29px;
+                    top: 3px;
+                }
+            }
+ 
+            .meta {
+                color: $black;
+                margin-top: $margin;
+ 
+                p {
+                    margin: 0;
+                }
+            }
+ 
+        }
+ 
+    }
+ 
+}
+
+portfolio-image {
+    padding: $padding*2;
+    background: $white;
+    border-left: 1px solid darken($grey, 10%);
+    text-align: center;
+ 
+    @media screen and (min-width: $break-three) {
+        float: left;
+        width: 70%;
+    }
+ 
+    img {
+        width: 100%;
+        max-width: 610px;
+        height: auto;
+    }
+ 
+    div.loading {
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+}
